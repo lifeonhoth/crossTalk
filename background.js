@@ -7,78 +7,6 @@
 
 */
 
-// var textJumbled;
-// var text;
-// var throughput;
-// var toSearch;
-
-// // attaching text corpus to "text" variable 
-// var text = "As armas e os barões assinalados, Que da ocidental praia Lusitana, Por mares nunca de antes navegados, Passaram ainda além da Taprobana";
-
-
-
-// // Called when user clicks on the browser action.
-// chrome.browserAction.onClicked.addListener(function(tab) {
-//   console.log('It\'s all Greek to ' + tab.url);
-//   chrome.tabs.update({
-//      url: toSearch
-// 	});
-// });
-
-// randomSelection();
-// replaceWhiteSpace();
-	
-
-
-// // function for breaking down strings into smaller, parameter-determined chunks
-// function chunkString(str, len) {
-//   var _size = Math.ceil(str.length/len),
-//       _ret  = new Array(_size),
-//       _offset
-//   ;
-
-//   for (var _i=0; _i<_size; _i++) {
-//     _offset = _i * len;
-//     _ret[_i] = str.substring(_offset, _offset + len);
-//   }
-
-//   return _ret;
-
-// }
-
-
-// // selecting array index at random
-// function randomSelection(){
-// 	var items = chunkString(text, 20);  // to adjust length of desired search terms, adjust parameters
-// 	throughput = items[Math.floor(Math.random()*items.length)]; 
-// }
-
-// // replacing white space with '+' character
-// function replaceWhiteSpace(){
-// 	throughput = throughput.split(' ').join('+');
-// 	textJumbled = throughput; 
-	
-// }
-
-// // finalizing url to search 
-// toSearch = "http://www.google.com/#q=" + textJumbled; 
-
-
-// console.log(throughput);
-// console.log(textJumbled);
-// console.log(toSearch);
-
-
-// TO DO:
-// -- DONE --HOW TO CUT UP RESULTING STRING SO AS TO SEARCH ONLY ONE 20str PIECE AT A TIME? ARRAY INDEXING?
-// -- DONE -- INSERT "+" IN PLACE OF EACH WHITE SPACE
-// HANDLE CRAZY CHARS: CUT OUT , ' @ * etc.
-// ATTACH TO OTHER TEXT CORPERA, LIVE OR STORED? 
-// LOOP SO TASK IS PERFROMED CONTINUALLY (WITH SOME DELAY)
-// HOW TO OPEN IN A NEW TAB INSTEAD OF USING ACTIVE TAB?
-// ANIMATE ICON TO ADD FEEDBACK TO USER WHEN EXTENSION IS TOGGELD ON OR OFF
-
-
 // CrossTalk 2015
 // v. 0.2
 // fletcherbach.com
@@ -164,7 +92,7 @@ function constructURL() {
   return toSearch;
 }
 
-// Called when user clicks on the browser action.
+// Called when user clicks on the browser action icon.
 chrome.browserAction.onClicked.addListener(function(tab) {
   if (isRunning == true) { // if on, and user clicks off, stop timer
     stopTimer()
@@ -186,9 +114,9 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 // -- DONE -- HANDLE UNWANTED CHARACTERS THAT CHOKE QUERY URL
 // -- DONE -- LOOP SO TASK IS PERFROMED CONTINUALLY (WITH SOME DELAY) (use setInterval?)
 // ATTACH TO OTHER TEXT CORPERA, LIVE OR STORED?
-// HOW TO OPEN IN A NEW TAB INSTEAD OF USING ACTIVE TAB?
+// HOW TO OPEN IN A NEW TAB INSTEAD OF USING ACTIVE TAB? BEST: IN BACKGROUND
 // ANIMATE ICON TO OFFER FEEDBACK TO USER WHEN EXTENSION IS TOGGELD ON OR OFF
-// BUILD SIMPLE PAGE THAT DISPLAYS WHAT IS BEING SEARCHED
+// BUILD SIMPLE FRAME THAT DISPLAYS WHAT IS BEING SEARCHED
 
 
 
