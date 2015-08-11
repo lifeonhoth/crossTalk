@@ -1,11 +1,11 @@
-// CrossTalk
+// crossTalk
 // Fletcher Bach 2015	
 // v. 0.2
 
 {
   "manifest_version": 2,
 
-  "name": "CrossTalk",
+  "name": "crossTalk",
   "icons": {
     "128": "icon128.png"
   },
@@ -16,7 +16,7 @@
   "browser_action": {
     "default_icon": "icon.png",
     //"default_popup": "popup.html",
-    "default_title": "CrossTalk"
+    "default_title": "crossTalk"
   },
 
   // "page_action":{

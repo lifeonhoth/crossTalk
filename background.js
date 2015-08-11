@@ -107,6 +107,20 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   // });
 });
 
+// ANIMATING BROWSER ACTION ICON
+// function animateIcon(){
+//   var imageData = drawContext.getImageData(0, 0, 19, 19);
+//     chrome.browserAction.setIcon({
+//       imageData: imageData
+//   });
+// }
+// if extension is 'on' animate icon. if not, static image.
+
+// function animateIcon(){
+
+   //iconURL : "/icon.png"
+// }
+
 
 // TO DO:
 // -- DONE -- HOW TO CUT UP RESULTING STRING SO AS TO SEARCH ONLY ONE 20str PIECE AT A TIME? ARRAY INDEXING?
