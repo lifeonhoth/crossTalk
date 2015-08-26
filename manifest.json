@@ -35,17 +35,6 @@
     //"https://ajax.googleapis.com/",
     "http://www.google.com/*",
     "https://www.google.com/*"
-    // "http://www.google.se/*",
-    // "https://www.google.se/*",
-    // "http://www.google.de/*",
-    // "https://www.google.de/*",
-    // "http://www.google.fr/*",
-    // "https://www.google.fr/*",
-    // "http://www.google.pt/*",
-    // "https://www.google.pt/*",
-    // "http://www.bing.com/*",
-    // "http://www.duckduckgo.com/*",
-    // "http://www.wikipedia.org/*"
     // "http://*/*",
     // "https://*/*"
   ]
