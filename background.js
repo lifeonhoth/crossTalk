@@ -22,7 +22,7 @@ var isRunning = false;
 //var text = "As armas e os barões assinalados, Que da ocidental praia Lusitana, Por mares nunca de antes navegados, Passaram ainda além da Taprobana";
 var text = "En dépit de vos sarcasmes et de vos plaisanteries, il vous a bien fallu cependant vous incliner devant les faits et reconnaitre la vérité des théories grace auxquelles Leverrier a si démesurément étendu les dimensions du monde solaire Pourquoi alors refuser à Babinet l autorisation de procéder d'une manière analogue pour affirmer, au delà de Neptune, l'existence d'une sphère que nos instruments d optique, jusqu a présent imparfaits, ne nous permettent pas de découvrir"
 
-// setting interval, calling all functions every 3 seconds
+// setting interval, calling all functions every n seconds
 // always call stop timer equivalently
 function startTimer(){
   intervalID = setInterval(callingAllFunctions, 5000); 
@@ -102,9 +102,9 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     isRunning = true;
   } 
   console.log('It\'s all Greek to ' + tab.url);
-  // chrome.tabs.update({
-  //   url: toSearch
-  // });
+    chrome.tabs.update({
+    url: toSearch
+  });
 });
 
 // ANIMATING BROWSER ACTION ICON
